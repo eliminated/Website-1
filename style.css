@@ -1,0 +1,95 @@
+nav {
+    background-color: #333;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    float: left;
+    width: 25%;
+    max-width: 25%;
+    text-align: center;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .welcome {
+    text-align: center;
+    font-size: 4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+
+
+  .content {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+  }
+
+
+  
+  body {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark-mode {
+    background-color: rgb(62, 57, 57);
+    color: white;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .dark {
+    /* styles for dark mode */
+    background-color: rgb(43, 32, 32);
+    color: white;
+  }
+  
+  #dark-mode-toggle {
+    /* button styles */
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #ccc;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  #dark-mode-toggle img {
+    /* icon styles */
+    width: 24px;
+    height: 24px;
+  }
+  
+  
+  
+  
