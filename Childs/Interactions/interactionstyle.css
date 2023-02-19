@@ -42,6 +42,7 @@ nav {
     padding: 10px;
     border: 1px solid #333;
     border-radius: 20px;
+    text-decoration: none;
     }
     
     .social-media a {
@@ -59,6 +60,7 @@ nav {
     .social-media .icon-label {
     display: block;
     font-size: 12px;
-    color: rgb(20, 14, 14)
+    color: rgb(20, 14, 14);
+    text-decoration: none;
     }
     

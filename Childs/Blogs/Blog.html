@@ -15,18 +15,22 @@
 			<li><a href="../Interactions/Interactions.html">Interactions</a></li>
 		</ul>
 	</nav>
+	<div class="counter-container">
+		<p>Total posts: <span id="post-count">0</span></p>
+	</div>
 	<div class="container">
 		<div class="input-container">
 			<input type="text" id="name-input" placeholder="Your name">
-			<textarea id="feelings-input" placeholder="Describe your feelings"></textarea>
+			<textarea id="feelings-input" placeholder="Describe your feelings" style="resize: none;"></textarea>
 			<button id="post-button">Post</button>
 		</div>
 
 	</div>
-	<div class="display-container"></div>>
-	<div class="counter-container">
-		<p>Total posts: <span id="post-count">0</span></p>
-	  </div>
+	<div class="recentpost">
+		<h1><u>Posts</u></h1>
+		<div class="display-container"></div>>
+
+	</div>
 	<script src="./blogscript.js"></script>
 	<button id="dark-mode-toggle-blog">
 		<img src="../../Sources/dark-mode-icon.png" alt="Toggle Dark Mode">
