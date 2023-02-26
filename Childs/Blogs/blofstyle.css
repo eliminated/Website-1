@@ -1,37 +1,38 @@
 nav {
-    background-color: #333;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    float: left;
-    width: 25%;
-    max-width: 25%;
-    text-align: center;
-  }
-  
-  nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 20px;
-  }
-  
-  nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  width: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 /*Post Input*/
 .container {
   max-width: 1000px;
@@ -58,7 +59,8 @@ label {
   border-radius: 20px;
 }
 
-.input-container input, .input-container textarea {
+.input-container input,
+.input-container textarea {
   display: block;
   margin-bottom: 10px;
   padding: 10px;
@@ -118,6 +120,7 @@ label {
   font-style: italic;
   color: #777;
 }
+
 .counter-container {
   float: right;
   margin-top: 20px;
@@ -137,8 +140,16 @@ label {
   cursor: pointer;
   margin-left: 10px;
 }
+/*Dark Stuffs!*/
+.content {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 20px;
+}
 
-/*Toggle dark mode stuff*/
+
+
 body {
   background-color: white;
   color: black;
@@ -148,6 +159,7 @@ body.dark-mode {
   background-color: rgb(62, 57, 57);
   color: white;
 }
+
 .dark-mode {
   background-color: black;
   color: white;
@@ -160,7 +172,7 @@ body.dark-mode {
   color: white;
 }
 
-#dark-mode-toggle-blog {
+#dark-mode-toggle {
   /* button styles */
   border-radius: 12px;
   padding: 8px;
@@ -172,9 +184,44 @@ body.dark-mode {
   z-index: 9999;
 }
 
-#dark-mode-toggle-blog img {
+#dark-mode-toggle img {
   /* icon styles */
   width: 24px;
   height: 24px;
 }
 
+
+/* Context Meny Custom */
+.context-menu {
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.context-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.context-menu li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.context-menu li:hover {
+  background-color: #f5f5f5;
+}
+
+.dark .context-menu {
+  background-color: #333;
+  color: white;
+}
+
+.dark .context-menu li:hover {
+  background-color: #444;
+}

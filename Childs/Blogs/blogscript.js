@@ -50,16 +50,41 @@ displayContainer.addEventListener("click", function(e) {
 });
 
 
-// Toggle dark mode script
-const toggleButton = document.getElementById('dark-mode-toggle-blog');
-const body = document.body;
 
-toggleButton.addEventListener('click', () => {
-  body.classList.toggle('dark');
-  toggleButton.classList.toggle('active');
-  if (body.classList.contains('dark')) {
-    toggleButton.innerHTML = '<img src="../../Sources/light-mode-icon.png" alt="Toggle Light Mode">';
-  } else {
-    toggleButton.innerHTML = '<img src="../../Sources/dark-mode-icon.png" alt="Toggle Dark Mode">';
-  }
-});
+// Context menu
+// Define the function to display the context menu
+function showContextMenu(e) {
+  e.preventDefault();
+  const contextMenu = document.getElementById("myContextMenu");
+  contextMenu.style.display = "block";
+  contextMenu.style.left = e.pageX + "px";
+  contextMenu.style.top = e.pageY + "px";
+}
+
+// Define the function to hide the context menu
+function hideContextMenu() {
+  const contextMenu = document.getElementById("myContextMenu");
+  contextMenu.style.display = "none";
+}
+
+// Define the function to copy all text on the page
+function copyAllText() {
+  const allText = document.body.innerText;
+  navigator.clipboard.writeText(allText);
+}
+
+// Attach the event listeners to the document
+document.addEventListener("contextmenu", showContextMenu);
+document.addEventListener("click", hideContextMenu);
+document.getElementById("copyAll").addEventListener("click", copyAllText);
+
+// Define the function to toggle dark mode
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle("dark");
+}
+
+// Attach the event listeners to the document
+document.addEventListener("contextmenu", showContextMenu);
+document.addEventListener("click", hideContextMenu);
+document.getElementById("toggleDarkMode").addEventListener("click", toggleDarkMode);
