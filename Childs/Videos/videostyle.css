@@ -34,100 +34,83 @@ nav {
   }
 
   /*Videos Style*/
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    max-width: 800px;
+  .upload-container {
+    width: 80%;
     margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
     text-align: center;
   }
   
-  .input-container {
-    display: flex;
-    flex-direction: column;
+  .upload-container form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .upload-container input[type="text"],
+  .upload-container textarea {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .upload-container input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  .upload-container button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .upload-container button[type="submit"]:hover {
+    background-color: #3e8e41;
+    font-size: 18px;
+  }
+  
+  .recent-posts-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .recent-posts-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .recent-posts-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .recent-posts-container li {
     margin-bottom: 10px;
   }
   
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"], input[type="file"] {
+  .recent-posts-container a {
+    display: block;
     padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 5px;
-  }
-  
-  #post-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #post-btn:hover {
-    background-color: #3e8e41;
-  }
-  
-  #video-display {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .video-container {
-    width: 250px;
-    margin: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .video-container:hover {
-    transform: scale(1.05);
-  }
-  
-  .video-container h2 {
+    text-align: left;
     font-size: 16px;
-    font-weight: bold;
-    margin-top: 0;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
   }
   
-  .video-container p {
-    margin-bottom: 5px;
+  .recent-posts-container a:hover {
+    background-color: #f2f2f2;
   }
   
-  .delete-btn {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  
-  .delete-btn:hover {
-    transform: scale(1.05);
-  }
-  
-  
+
   
   

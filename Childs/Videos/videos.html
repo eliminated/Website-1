@@ -29,25 +29,33 @@
             <link rel="stylesheet" type="text/css" href="style.css">
           </head>
           <body>
-            <div class="container">
-              <div class="upload-video">
-                <form>
-                  <input type="file" accept=".mp4">
-                  <br>
-                  <input type="text" placeholder="Video Title">
-                  <br>
-                  <input type="text" placeholder="Uploader">
-                  <br>
-                  <button type="submit">Post Video</button>
-                </form>
-              </div>
-              <div class="video-display">
-                <h2>Recent Videos</h2>
-                <div class="videos">
-                  <!-- videos will be displayed here -->
-                </div>
-              </div>
+            <div class="upload-container">
+              <h2>Upload Video</h2>
+              <form id="upload-form">
+                <label for="video-title">Video Title:</label>
+                <input type="text" id="video-title" name="video-title" required>
+            
+                <label for="uploader-name">Uploader Name:</label>
+                <input type="text" id="uploader-name" name="uploader-name" required>
+            
+                <label for="video-description">Description:</label>
+                <textarea id="video-description" name="video-description"></textarea>
+            
+                <label for="video-file">Select Video File (mp4 only):</label>
+                <input type="file" id="video-file" name="video-file" accept=".mp4" required>
+            
+                <button type="submit" id="post-btn">Post</button>
+              </form>
             </div>
+            
+            <div class="recent-posts-container">
+              <h2>Recent Posts</h2>
+              <ul id="recent-posts-list">
+              </ul>
+            </div>
+            
+            
+            
             
             <script src="script.js"></script>
           </body>
